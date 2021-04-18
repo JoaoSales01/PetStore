@@ -20,7 +20,7 @@
 
   // Content aonde ira ficar todo o html da pagina
   <mat-sidenav-content>
-
+    
     <!-- Botão para abrir e fechar o menu -->
     <mat-toolbar color="primary">
           <button mat-icon-button aria-label="Menu" class="header-button" (click)="sidenav.toggle()">
@@ -33,6 +33,8 @@
 
     <!-- Router outlet que ira renderizar as paginas -->
     <router-outlet></router-outlet>
+    <app-categories-featured></app-categories-featured>
+
 
   </mat-sidenav-content>
 </mat-sidenav-container>
