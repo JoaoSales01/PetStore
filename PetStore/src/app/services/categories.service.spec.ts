@@ -1,5 +1,5 @@
 import { TestBed } from '@angular/core/testing';
-import { Category } from '../interfaces/product';
+import { Category } from '../interfaces/category';
 import { HttpClientTestingModule, HttpTestingController } from '@angular/common/http/testing';
 import { CategoriesService } from './categories.service';
 
