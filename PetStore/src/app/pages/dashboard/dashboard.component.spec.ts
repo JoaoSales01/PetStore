@@ -1,6 +1,8 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 import { MockComponents } from 'ng-mocks';
 import { CategoriesFeaturedComponent } from 'src/app/components/categories-featured/categories-featured.component';
+import { ProductItemComponent } from 'src/app/components/product-item/product-item.component';
+import { ProductsServiceMock } from 'src/app/mocks/products-mock';
 
 import { ProductsService } from 'src/app/services/products.service';
 
@@ -15,11 +17,13 @@ describe('DashboardComponent', () => {
       declarations: [DashboardComponent,
         MockComponents(
           CategoriesFeaturedComponent,
+          ProductItemComponent,
           
         )],
       providers: [
         {
           provide: ProductsService,
+          useClass: ProductsServiceMock
           
         }
       ]
@@ -31,6 +35,7 @@ describe('DashboardComponent', () => {
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
+  
 
   it('should create', () => {
     expect(component).toBeTruthy();

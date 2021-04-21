@@ -31,17 +31,6 @@ export enum AnimalType {
     Others = 'outros'
 }
 
-export interface Parameters {
-    company_name: string;
-    trademark: string;
-    email: string;
-    social_networks: Array<SocialNetwork>
-    
-}
-export interface SocialNetwork {
-    account: string,
-    name: string
-}
 
 
 

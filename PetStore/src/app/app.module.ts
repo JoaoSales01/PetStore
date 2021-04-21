@@ -10,8 +10,9 @@ import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatMenuModule } from '@angular/material/menu';
 import { HttpClientModule } from '@angular/common/http';
 import { MatButtonModule } from '@angular/material/button';
-import { CategoriesFeaturedComponent } from './components/categories-featured/categories-featured.component'; 
-
+import { CategoriesFeaturedComponent } from './components/categories-featured/categories-featured.component';
+import { ProductItemComponent } from './components/product-item/product-item.component'; 
+import { MatCardModule } from '@angular/material/card';
 @NgModule({
 
  // schemas: [CUSTOM_ELEMENTS_SCHEMA],//
@@ -19,7 +20,8 @@ import { CategoriesFeaturedComponent } from './components/categories-featured/ca
   declarations: [
     AppComponent,
     DashboardComponent,
-    CategoriesFeaturedComponent
+    CategoriesFeaturedComponent,
+    ProductItemComponent
   
   ],
   imports: [
@@ -32,6 +34,7 @@ import { CategoriesFeaturedComponent } from './components/categories-featured/ca
     MatMenuModule,
     HttpClientModule,
     MatButtonModule,
+    MatCardModule,
     ],
   providers: [],
   bootstrap: [AppComponent]
