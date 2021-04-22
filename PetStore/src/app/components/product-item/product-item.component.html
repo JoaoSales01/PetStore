@@ -2,16 +2,14 @@
     <img mat-card-image [src]="product.featured_image" *ngIf="product.featured_image">
      <div class="product-name">
          <h3>{{product.name}}</h3>
-     </div>
-         
+     </div>        
         <ng-container *ngFor="let star of [1, 2, 3, 4, 5]">
             <mat-icon class="star-icon">                     
                 <ng-container *ngIf="product.rating_stars >= star">start</ng-container>                    
                 <ng-container *ngIf="star - product.rating_stars == 0.5">star_half</ng-container>
                 <ng-container *ngIf="star - product.rating_stars > 0.5">star_border</ng-container>
             </mat-icon>
-        </ng-container>
-         
+        </ng-container>        
          <div class="container-value">
              <del class="original-value">
                  {{product.value | currency: 'BRL'}}
