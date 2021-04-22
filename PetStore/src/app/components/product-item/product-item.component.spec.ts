@@ -72,8 +72,7 @@ describe('ProductItemComponent', () => {
 
   it('should show five icon stars', () => {
     const html = fixture.nativeElement;    
-    const matIcons = document.getElementsByTagName('mat-icon');
-    console.log(matIcons)   
+    const matIcons = document.getElementsByTagName('mat-icon');  
     expect(matIcons.length).toEqual(5);    
     expect(matIcons[0].textContent?.trim()).toContain('star');
   });
