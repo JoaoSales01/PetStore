@@ -16,6 +16,13 @@ import { MatCardModule } from '@angular/material/card';
 import { ProductComponent } from './pages/product/product.component';
 import { NgxUsefulSwiperModule } from 'ngx-useful-swiper';
 import { FooterComponent } from './components/footer/footer.component';
+import { ContactComponent } from './pages/contact/contact.component';
+import {MatFormFieldModule} from '@angular/material/form-field';
+import {ReactiveFormsModule, FormsModule} from '@angular/forms'
+import {MatInputModule} from '@angular/material/input'; 
+import {MatSnackBarModule} from '@angular/material/snack-bar';
+
+
 @NgModule({
 
  // schemas: [CUSTOM_ELEMENTS_SCHEMA],//
@@ -26,8 +33,9 @@ import { FooterComponent } from './components/footer/footer.component';
     CategoriesFeaturedComponent,
     ProductItemComponent,
     ProductComponent,
-    FooterComponent
-  
+    FooterComponent,
+    ContactComponent,
+   
   ],
   imports: [
     BrowserModule,
@@ -40,7 +48,12 @@ import { FooterComponent } from './components/footer/footer.component';
     HttpClientModule,
     MatButtonModule,
     MatCardModule,
-    NgxUsefulSwiperModule
+    NgxUsefulSwiperModule,
+    MatFormFieldModule,
+    ReactiveFormsModule,
+    MatInputModule,
+    FormsModule,
+    MatSnackBarModule
     ],
   providers: [],
   bootstrap: [AppComponent]
