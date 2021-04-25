@@ -21,6 +21,7 @@ import {MatFormFieldModule} from '@angular/material/form-field';
 import {ReactiveFormsModule, FormsModule} from '@angular/forms'
 import {MatInputModule} from '@angular/material/input'; 
 import {MatSnackBarModule} from '@angular/material/snack-bar';
+import { ProductsComponent } from './pages/products/products.component';
 
 
 @NgModule({
@@ -35,6 +36,7 @@ import {MatSnackBarModule} from '@angular/material/snack-bar';
     ProductComponent,
     FooterComponent,
     ContactComponent,
+    ProductsComponent,
    
   ],
   imports: [

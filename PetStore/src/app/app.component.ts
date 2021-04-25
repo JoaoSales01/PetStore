@@ -16,6 +16,7 @@ export class AppComponent {
   menus = [
     {'name': 'home', 'router': '/' },
     {'name': 'contato', 'router': '/contact' },
+    { 'name': 'Produtos', 'router': '/products' },
   ];
 
   showPage(pageName:string, sidenav:MatSidenav){

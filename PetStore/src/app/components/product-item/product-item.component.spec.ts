@@ -2,7 +2,7 @@ import { ComponentFixture, TestBed } from '@angular/core/testing';
 import { AnimalType, Product } from 'src/app/interfaces/product';
 import { MockComponents } from 'ng-mocks';
 import { ProductItemComponent } from './product-item.component';
-import { ProductsServiceMock } from 'src/app/mocks/products-mock';
+import { ProductServiceMock } from 'src/app/mocks/products-mock';
 import { ProductsService } from 'src/app/services/products.service';
 import { MatIcon } from '@angular/material/icon';
 import { MatCard } from '@angular/material/card';
@@ -48,7 +48,7 @@ describe('ProductItemComponent', () => {
         {
 
         provide:ProductsService,
-        useClass:ProductsServiceMock
+        useClass:ProductServiceMock
         
         }
       ]

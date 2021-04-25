@@ -1,5 +1,5 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
-import { ProductsServiceMock } from 'src/app/mocks/products-mock';
+import { ProductServiceMock } from 'src/app/mocks/products-mock';
 import { ProductsService } from 'src/app/services/products.service';
 import { from } from 'rxjs';
 import { ProductComponent } from './product.component';
@@ -38,7 +38,7 @@ describe('ProductComponent', () => {
       providers: [
         {
         provide: ProductsService,
-        useClass: ProductsServiceMock,
+        useClass: ProductServiceMock,
         },
         {
         provide: ActivatedRoute,
